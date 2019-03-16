@@ -18,15 +18,7 @@ export default class NumericInput extends Component {
         this.ref = null
     }
 	
-	componentWillReceiveProps(props) {
-    if (props.initValue !== this.state.value) {
-      this.setState({
-        value: props.initValue,
-        lastValid: props.initValue,
-        stringValue: props.initValue.toString()
-      });
-    }
-  }
+
     updateBaseResolution = (width,height) => {
         calcSize = create({width,height})
     }
